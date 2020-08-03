@@ -17,8 +17,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 I wanted an easy way to create proxies to my local server to be able to share with coworkers something I am working on quickly. Using a self hosted instance of [sish](https://github.com/antoniomika/sish) I found it easy to do just that. However I also found that it requires me to write a pretty complex ssh command that was hard to remember the syntax for. So I made this.
 
 Here's why:
@@ -43,10 +41,16 @@ This is to show just how easy it is to get started with sish proxy.
 
 ### Prerequisites
 
-1. Save the script to your user local bin directory so that the script is already in your PATH
+1. Save the script to your user local bin directory so that the script is already in your PATH:
 2. Edit the top section of the script with your sish server and port number
 
+```sh
+#1
+cp proxy.sh /usr/local/bin/proxy
+```
+
 ```bash
+#2
 SISH_SERVER=example.com
 SISH_PORT=22
 ```
