@@ -47,12 +47,12 @@ This is to show just how easy it is to get started with sish proxy.
 2. Edit the top section of the script with your sish server and port number
 
 ```sh
-#1
-cp proxy.sh /usr/local/bin/proxy
-```
+#1 Saving script and install to somewhere in your path
+git clone https://github.com/nperez0111/sish-proxy
+cd sish-proxy
+sudo ln -s "$PWD/proxy.sh" /usr/local/bin/proxy
 
-```bash
-#2
+#2 Edit proxy.sh with your server domain and port
 SISH_SERVER=example.com
 SISH_PORT=22
 ```
